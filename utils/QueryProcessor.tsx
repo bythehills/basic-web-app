@@ -7,5 +7,14 @@ export default function QueryProcessor(query: string): string {
     );
   }
 
+  if (query.toLowerCase().includes("andrew id")) {
+    return (
+      "Your andrew ID may be a combination of your first name,  " +
+      "your middle initial, and your last name, or any combination of  " +
+      "and initials and numbers if it is already taken."
+    );
+  }
+
+
   return "";
 }

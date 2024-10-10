@@ -38,5 +38,9 @@ describe("QueryProcessor", () => {
         expect(QueryProcessor("What is 3 multiplied by 8?")).toEqual("24");
     });
 
+    test('should add numbers', () => {
+        expect(QueryProcessor("What is 5 plus 52?")).toEqual("57");
+        expect(QueryProcessor("What is 12 plus 1?")).toEqual("13");
+    });
 
 });

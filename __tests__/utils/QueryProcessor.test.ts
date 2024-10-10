@@ -28,4 +28,11 @@ describe("QueryProcessor", () => {
         ));
     });
 
+    test('should add numbers', () => {
+        expect(QueryProcessor("Which of the following numbers is the largest: 35, 48, 42?")).toEqual("48");
+        expect(QueryProcessor("Which of the following numbers is the largest: 62, 29, 82?")).toEqual("82");
+    });
+
+
+
 });
